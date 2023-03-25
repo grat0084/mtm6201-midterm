@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+/* MY STYLES */
+.a{
+	font-size: medium;
+	display: block;
+}
+
+body{
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 18px; /*1em is equivalent to 14px as well as 1rem)*/  
+	line-height: 1.5; 
+	color: rgb(0, 0, 0);
+   }
+   
+   .header-saudade{
+	background-color: rgb(118, 127, 153);
+	background-image: url(C:/Users/aitan/OneDrive/Desktop/mtm6201-midterm/mtm6201-midterm/images/bowandarrow.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 550px;
+   }
+   
+   /*font size for header: 71pt actually come ack to that and confirm because I think you didnt pay attention to that*/
+   
+   /*padding vs margin. padding makes thing bigger. margin pushes things around.*/
+   
+   /*LAYOUT*/
+   
+   /*Search engine is flexbox*/
+   
+   .front-header{
+	color: #ffffff;
+	text-align: left;
+   }
+   main{
+	background-color: rgb(211, 211, 211);
+	align-items: center;
+   }
+   .definition{
+	font-weight: bold;
+   }
+   .written-definition{
+	align-items: center;
+   }
+   h1{
+   font-size: 71px;
+   line-height: 106px;
+   margin-bottom: 10px;
+   font-weight: bold;
+    padding-left: 
+   40rem;
+   text-align: center;
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-80%, -30%);
+   color: white;
+   }
+   
+   h2{
+   font-size: 48px;
+   margin-bottom:12px;
+   font-weight: bold;
+   padding-left: 0.5rem;
+   text-align: center;
+   }
+   h3{
+	   font-size: 34px;
+	   margin-bottom: 10px;
+	   font-weight: bold;
+	   padding-left: 12rem;
+   }
+   
+   P{
+   padding-left: 10rem;
+   font-weight: 100;
+   text-align: center;
+   }
+   
+   img{
+	   max-width: 100%;
+	   height: auto;
+	   align-content: center;
+	   align-items: center;
+   
+   }
+   
+   .container{
+   padding-left: 12em;
+   /* display: inline-block; */
+   min-width: 100px;
+   }
+
+/* .imgbox .container .img{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+flex-flow: column wrap;
+}
+    */
+
+   
+   nav{
+	   background-color: #222222;
+	   list-style:none;
+	   display: grid;
+	   
+   }
+   
+   a{
+	display:inline-block;
+   }
+   nav a:link,
+   nav a:visited{
+	width: 140px;
+	   display: block;
+   color: #ffffff;
+   font-size: 18px;
+   padding-top: 17px;
+   padding-bottom: 17px;
+   text-decoration: none;
+   text-align: center;
+   list-style:none;
+   float: left;
+   }
+   
+   nav li.current a:link,
+   nav li.current a:visited {
+	   background-color: #000000;
+	   color: #ffffff;
+	   list-style:none; 
+	   position: relative;
+	display: flex;
+   }
+   
+   .logo{
+   background-color:#c78b07 ;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   }
+   
+   header form {
+	   display: flex;
+   }
+   
+   header form input {
+	   flex-grow: 1;
+	   height: 35px;
+   }
+
+   /* WELCOME SECTION */
+
+.header-welcome{
+	background-image: url(C:\Users\aitan\OneDrive\Desktop\mtm6201-midterm\mtm6201-midterm\images\kimura.jpg);
+	background-size: cover;
+	padding-top: 68px;
+	padding-bottom: 68px;
+	}
+	
+	.header-welcome .container{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-top: 60px;
+	}
+
+	.body{
+		background-color: azure;
+	}
+
+
+ .container{
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	flex-wrap: wrap;
+}
+.container .box{
+	position: relative;
+	width: 20rem;
+	height: 20rem;
+	margin: 1rem;
+}
+	/* SECOND PAGE */
+
+.container .box:hover .imgbox{
+	transform: translate(-15rem, 0);
+	
+}
+.container .box:hover .content{
+	transform: translate(6rem, 0);
+}
+
+ .imgbox{
+	position:absolute;
+	top: 0;
+	left: -3px;;
+	width:100%;
+	height:100%;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+	float: left;
+	margin-right: 10px;
+	 padding-left: -30rem;
+	padding-right: 5rem; 
+ }
+.imgbox img{
+	width: 20rem;
+	height: 20rem;
+	left: -150px;
+	object-fit:cover;
+resize: both;
+float: left;
+margin-right: 10px;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+} 
+.gi-gi{
+	grid-template-columns: repeat(3,1fr);
+}
+/* .background-image-kimura img{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+} */
+/* Second page */
+
+.section-leandro{
+	float: right;
+}
+/* .section-buchecha{
+	float: left;
+} */ 
+
+.front-info{
+	text-align: center;
+}
+/* contact page */
+form input,
+form textarea{
+	width: 100%;
+	padding:10px;
+	margin-bottom: 10px;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 1px 1 px 2 px rgba(0,0,0,0.1);
+
+}
+
+form input [type="submit"] {
+background-color: #333;
+color: #fff;
+cursor:pointer;
+}
+
+.container-contact{
+	text-align: center;
+}
+
+.footer-stuff{
+	background-image: url(C:\Users\aitan\OneDrive\Desktop\mtm6201-midterm\mtm6201-midterm\images\kimura.jpg);
+}
+ @media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+}
+    @media screen and (min-width: 760px){
+
+
+        .container {
+            width: 706px;
+            margin: 0 auto;
+        }
+	}
